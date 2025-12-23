@@ -1,0 +1,82 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>WillGood Corp | Business Support Services</title>
+<meta name="description" content="All other business support services: administrative support, documentation, coordination, and operational help."/>
+<style>
+:root{--bg:#0b0c10;--panel:#12131a;--text:#f4f5f7;--muted:#a9adba;--line:#23243a;--accent:#fb7185}
+*{box-sizing:border-box}html,body{margin:0;padding:0}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:radial-gradient(900px 500px at 80% 0%,rgba(251,113,133,.12),transparent 60%),var(--bg);color:var(--text);line-height:1.55}
+a{color:inherit}.container{max-width:980px;margin:0 auto;padding:0 18px}
+header{position:sticky;top:0;z-index:10;background:rgba(11,12,16,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px}.logo{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;border:1px solid var(--line);background:rgba(251,113,133,.12);font-weight:900}
+.name{font-weight:900}.tag{font-size:12px;color:var(--muted)}
+nav{display:flex;gap:10px;flex-wrap:wrap}nav a{font-size:13px;text-decoration:none;color:var(--muted);padding:8px 10px;border-radius:10px;border:1px solid transparent}
+nav a:hover{color:var(--text);border-color:var(--line);background:rgba(255,255,255,.03)}
+main{padding:22px 0}h1{font-size:34px;line-height:1.15;margin:0 0 10px}h2{font-size:22px;margin:0 0 10px}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid var(--line);border-radius:16px;padding:16px}
+.grid{display:grid;grid-template-columns:1.15fr .85fr;gap:14px}@media(max-width:900px){.grid{grid-template-columns:1fr}}
+.btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.btn{display:inline-block;text-decoration:none;font-weight:800;font-size:13px;padding:10px 14px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.03)}
+.btn.primary{border-color:rgba(251,113,133,.35);background:rgba(251,113,133,.12)}
+.small{font-size:12px;color:var(--muted)}.muted{color:var(--muted)}
+ul{margin:8px 0 0;padding-left:18px;color:var(--muted)}li{margin:6px 0}
+section{padding:14px 0}footer{border-top:1px solid var(--line);padding:18px 0;background:rgba(0,0,0,.15);color:var(--muted);font-size:12px}
+</style></head><body>
+<header><div class="container top">
+<div class="brand"><div class="logo">WG</div><div><div class="name">WillGood Corp</div><div class="tag">Business Support Services</div></div></div>
+<nav><a href="#services">Services</a><a href="#pay">Pay</a><a href="#contact">Contact</a><a href="#policies">Policies</a></nav>
+</div></header>
+
+<main class="container">
+<section class="grid">
+  <div class="card">
+    <h1>Reliable business support—organized, documented, and delivered.</h1>
+    <p class="muted">We provide general business support services such as documentation, coordination, client intake setup, and operational assistance.</p>
+    <div class="btnrow" id="pay">
+      <a class="btn primary" href="https://buy.stripe.com/YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Pay / Checkout</a>
+      <a class="btn" href="#contact">Contact</a>
+    </div>
+    <p class="small">Non-legal, non-tax services. Support services only.</p>
+  </div>
+  <div class="card">
+    <h2>What you can request</h2>
+    <ul>
+      <li>Process setup and organization</li>
+      <li>Documentation and templates</li>
+      <li>Coordination and admin support</li>
+      <li>Ongoing support packages</li>
+      <li>Business support deliverables (written)</li>
+    </ul>
+  </div>
+</section>
+
+<section id="services"><div class="card">
+  <h2>Services</h2>
+  <ul>
+    <li>One-time support deliverable (fixed fee)</li>
+    <li>Monthly support package (retainer)</li>
+    <li>Documentation and workflow buildout</li>
+  </ul>
+</div></section>
+
+<section id="contact"><div class="card">
+  <h2>Contact</h2>
+  <p><strong>WillGood Corp</strong><br/>
+    Address: YOUR_ADDRESS<br/>
+    Email: <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a><br/>
+    Phone: <a href="tel:+1YOUR_PHONE">YOUR_PHONE</a>
+  </p>
+</div></section>
+
+<section id="policies"><div class="card">
+  <h2>Policies</h2>
+  <p><strong>Refunds:</strong> Refunds for unused services within 24 hours. If delivery has begun, refunds may be partial or unavailable.</p>
+  <p><strong>Terms:</strong> Business support services only. No legal/tax/medical advice. No guaranteed results.</p>
+  <p><strong>Privacy:</strong> Data used only for delivery. Payments processed by Stripe.</p>
+</div></section>
+</main>
+
+<footer><div class="container">© <span id="y"></span> WillGood Corp. All rights reserved.</div></footer>
+<script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+</body></html>
